@@ -83,7 +83,7 @@ export default{
             <nav class="header-nav">
                 <ul>
                     <li v-for="(link, index) in links" :key="index" @click="changeActiveElement(index)">
-                        <a :class="{'active': link.active}" >{{ link.text }} </a>
+                        <a :class="{'active': link.active}" :href="link.href">{{ link.text }} </a>
                     </li>
                 </ul>
             </nav>
