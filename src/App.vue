@@ -2,12 +2,14 @@
 import AppHeader from "./components/AppHeader.vue";
 import MainContent from "./components/MainContent.vue";
 import ShopNav from "./components/ShopNav.vue"
+import AppFooter from "./components/AppFooter.vue"
 
 export default{
   components: {
     AppHeader,
     MainContent,
-    ShopNav
+    ShopNav,
+    AppFooter
   },
 
   data(){
@@ -23,6 +25,8 @@ export default{
     <MainContent />
     <ShopNav />
   </main>
+
+  <AppFooter />
 
 </template>
 
