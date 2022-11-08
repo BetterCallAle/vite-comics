@@ -83,11 +83,12 @@ export default{
             margin-left: 1rem;
             padding: .5rem;
             border: 1px solid transparent;
+            border-radius: 10px;
             transition: all 125ms linear;
             
             &:hover{
                     border: 1px solid white;
-                    background-color: lithen($main-blue, 50%);
+                    background-color: lighten($main-blue, 10%);
                 }
 
             a{
@@ -98,11 +99,7 @@ export default{
                 .card-img{
                     width: 25%;
                     @include flex-vertical-center();
-
-                    img{
-                        width: 100%;
-                    }
-            }
+                }
 
                 .card-txt{
                     margin-left: 1rem;
