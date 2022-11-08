@@ -1,10 +1,13 @@
 <script>
-import AppHeader from "./components/AppHeader.vue"
-import MainContent from "./components/MainContent.vue"
+import AppHeader from "./components/AppHeader.vue";
+import MainContent from "./components/MainContent.vue";
+import ShopNav from "./components/ShopNav.vue"
+
 export default{
   components: {
     AppHeader,
-    MainContent
+    MainContent,
+    ShopNav
   },
 
   data(){
@@ -15,7 +18,11 @@ export default{
 
 <template>
   <AppHeader />
-  <MainContent />
+  
+  <main>
+    <MainContent />
+    <ShopNav />
+  </main>
 
 </template>
 

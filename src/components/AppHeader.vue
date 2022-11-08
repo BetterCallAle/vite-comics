@@ -77,7 +77,7 @@ export default{
     <header>
         <div class="container">
             <div class="header-logo">
-                <img src="../assets/img/dc-logo.png" alt="">
+                <img src="../assets/img/dc-logo.png" alt="Logo DC">
             </div>
 
             <nav class="header-nav">
