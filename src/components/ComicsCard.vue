@@ -1,7 +1,7 @@
 <script>
 export default{
     name: "ComicsCard",
-    prompt: {
+    props: {
         imgUrl : String,
         cardHeading : String
     }
@@ -25,13 +25,30 @@ export default{
 
 <style lang="scss" scoperd>
 .card{
-    width: calc(100% / 6 - 1rem);
-    margin: 1rem .5rem;
+    width: calc(100% / 6 - 1.5rem);
+    margin: 1rem .75rem;
+
+    &:hover .card-img img{
+        scale: 1.1
+    }
 
     .card-img{
         height: 200px;
-        overflow-y: hidden;
+        overflow: hidden;
         margin-bottom: .8rem;
+
+        img{
+            scale: 1;
+            transition: all 300ms linear;
+        }
+    }
+
+    .card-txt{
+        font-size: .7rem;
+        text-transform: uppercase;
+        h3{
+            font-weight: 100;
+        }
     }
 }
 
