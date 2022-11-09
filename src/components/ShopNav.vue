@@ -48,7 +48,7 @@ export default{
 <template>
     <section id="shop-nav">
         <nav>
-            <div class="container">
+            <div class="small-container">
                 <div class="row">
                     <div class="card" v-for="card in cards">
                         <a :href="card.href">
@@ -76,7 +76,7 @@ export default{
     padding: 2rem 0;
 
     .row{
-        @include flex-container(space-evenly);
+        @include flex-container(space-between);
         .card{
             width: calc(100% / 5 - 1rem);
             margin-left: 1rem;
