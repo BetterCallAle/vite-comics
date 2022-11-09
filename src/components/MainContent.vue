@@ -93,7 +93,7 @@ export default{
 
         <div class="comics">
             <div class="container">
-                
+
                 <div class="flag">
                     <span>CURRENT SERIES</span>
                 </div>
@@ -142,7 +142,7 @@ export default{
                 background-color: $main-blue;
                 position: absolute;
                 top: -65px;
-                left: 0
+                left: -20px;
             }
         
             .comics-top{
