@@ -99,6 +99,11 @@ export default{
                 .card-img{
                     width: 25%;
                     @include flex-vertical-center();
+
+                    img{
+                        width: 100%;
+                        min-width: 40px;
+                    }
                 }
 
                 .card-txt{
