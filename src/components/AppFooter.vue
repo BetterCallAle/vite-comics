@@ -240,6 +240,7 @@ footer{
                     background-color: transparent;
                     color: white;
                     border: 1px solid $main-blue;
+                    cursor:pointer;
                     transition: all 125ms linear;
                 }
 
