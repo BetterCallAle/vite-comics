@@ -78,7 +78,6 @@ export default{
     .row{
         @include flex-container(space-evenly);
         .card{
-            @include flex-vertical-center();
             width: calc(100% / 5 - 1rem);
             margin-left: 1rem;
             padding: .5rem;
@@ -95,10 +94,10 @@ export default{
                 display: flex;
                 width: 100%;
                 height: 100%;
+                @include flex-vertical-center();
                 
                 .card-img{
                     width: 25%;
-                    @include flex-vertical-center();
 
                     img{
                         width: 100%;
@@ -110,7 +109,6 @@ export default{
                     margin-left: 1rem;
                     font-size: .6rem;
                     color: white;
-                    @include flex-vertical-center();
 
                     h2{
                         font-weight: 100;
