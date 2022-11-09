@@ -96,8 +96,8 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 header{
-    height: 150px;
-    line-height: 150px;
+    height: 120px;
+    line-height: 120px;
     .container{
         @include flex-container(space-between);
         
@@ -116,7 +116,7 @@ header{
                     a{
                         display: inline-block;
                         text-transform: uppercase;
-                        line-height: 136px;
+                        line-height: 105px;
                         color: lighten($main-dark, 20%);
                         font-weight: 700;
                         font-size: .8rem;
