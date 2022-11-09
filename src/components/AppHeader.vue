@@ -96,8 +96,14 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 header{
-    height: 120px;
-    line-height: 120px;
+    background-color: white;
+    height: $header-height;
+    width: 100%;
+    line-height: $header-height;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    z-index: 999;
     .container{
         @include flex-container(space-between);
         

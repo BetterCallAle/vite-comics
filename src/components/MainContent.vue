@@ -1,6 +1,11 @@
 <script>
+import ComicsCardVue from './ComicsCard.vue';
+
 export default{
     name: "MainContent",
+    components:{
+        ComicsCardVue
+    },
     data(){
         return{
 
@@ -11,8 +16,14 @@ export default{
 
 <template>
     <section id="main-content">
-        <div class="container">
-            <h2> --> Content Goes Here &lt;-- </h2>
+        <div class="jumbotron"></div>
+
+        <div class="comics">
+            <div class="container">
+                <div class="row">
+                    <ComicsCardVue />
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -23,8 +34,14 @@ export default{
 
 #main-content{
     background-color: $main-dark;
-    padding: 4rem 0;
+    margin-top: $header-height;
     color: white;
+
+    .jumbotron{
+        background-image: url(../assets/img/jumbotron.jpg);
+        min-height: 450px;
+        background-position: top center;
+    }
 }
 
 

@@ -50,13 +50,13 @@ export default{
         <nav>
             <div class="small-container">
                 <div class="row">
-                    <div class="card" v-for="card in cards">
+                    <div class="item" v-for="card in cards">
                         <a :href="card.href">
-                            <div class="card-img">
+                            <div class="item-img">
                                 <img :src="card.imgPath" :alt="card.imgAlt">
                             </div>
 
-                            <div class="card-txt">
+                            <div class="item-txt">
                                 <h2>{{ card.cardText }}</h2>
                             </div>
                         </a>
@@ -77,7 +77,7 @@ export default{
 
     .row{
         @include flex-container(space-between);
-        .card{
+        .item{
             width: calc(100% / 5 - 1rem);
             margin-left: 1rem;
             padding: .5rem;
@@ -96,7 +96,7 @@ export default{
                 height: 100%;
                 @include flex-vertical-center();
                 
-                .card-img{
+                .item-img{
                     width: 25%;
 
                     img{
@@ -105,7 +105,7 @@ export default{
                     }
                 }
 
-                .card-txt{
+                .item-txt{
                     margin-left: 1rem;
                     font-size: .6rem;
                     color: white;
