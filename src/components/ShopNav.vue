@@ -8,31 +8,31 @@ export default{
                     imgPath: this.getImgPath('../assets/img/buy-comics-digital-comics.png'),
                     imgAlt: "Tablet con all'interno logo DC",
                     cardText: "Digital Comics",
-                    href: "/Comics"
+                    href: "/comics"
                 },
                 {
                     imgPath: this.getImgPath('../assets/img/buy-comics-merchandise.png'),
                     imgAlt: "T-shirt con logo DC",
                     cardText: "DC Merchandise",
-                    href: "/Merchandise"
+                    href: "/merchandise"
                 },
                 {
                     imgPath: this.getImgPath('../assets/img/buy-comics-subscriptions.png'),
                     imgAlt: "Carte con simbolo di Flash",
                     cardText: "Subscription",
-                    href: "/Subscription"
+                    href: "/subscription"
                 },
                 {
                     imgPath: this.getImgPath('../assets/img/buy-comics-shop-locator.png'),
                     imgAlt: "Puntatore mappa",
                     cardText: "Comic Shop Locator",
-                    href: "/Locator"
+                    href: "/locator"
                 },
                 {
                     imgPath: this.getImgPath('../assets/img/buy-dc-power-visa.svg'),
                     imgAlt: "Carta di credito con simbolo di Flash",
                     cardText: "DC Power Visa",
-                    href: "/Visa"
+                    href: "/visa"
                 },
             ]
         }

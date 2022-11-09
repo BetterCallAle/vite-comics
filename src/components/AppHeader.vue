@@ -6,52 +6,52 @@ export default{
             links:[
                 {
                     text: "Characters",
-                    href: "/Characters",
+                    href: "/characters",
                     active: false
                 },
                 {
                     text: "Comics",
-                    href: "/Comics",
+                    href: "/comics",
                     active: true
                 },
                 {
                     text: "Movies",
-                    href: "/Movies",
+                    href: "/movies",
                     active: false
                 },
                 {
                     text: "TV",
-                    href: "/TV",
+                    href: "/tv",
                     active: false
                 },
                 {
                     text: "Games",
-                    href: "/Games",
+                    href: "/games",
                     active: false
                 },
                 {
                     text: "Collectibles",
-                    href: "/Collectibles",
+                    href: "/collectibles",
                     active: false
                 },
                 {
                     text: "Videos",
-                    href: "/Videos",
+                    href: "/videos",
                     active: false
                 },
                 {
                     text: "Fans",
-                    href: "/Fans",
+                    href: "/fans",
                     active: false
                 },
                 {
                     text: "News",
-                    href: "/News",
+                    href: "/news",
                     active: false
                 },
                 {
                     text: "Shop",
-                    href: "/Shop",
+                    href: "/shop",
                     active: false
                 }
             ],
