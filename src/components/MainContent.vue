@@ -93,6 +93,11 @@ export default{
 
         <div class="comics">
             <div class="container">
+                
+                <div class="flag">
+                    <span>CURRENT SERIES</span>
+                </div>
+
                 <div class="comics-top">
                     <div class="row">
                         <ComicsCardVue v-for="(comic, index) in comics" :key="index" :imgUrl="comic.thumb" :cardHeading="comic.series"/>
@@ -121,43 +126,49 @@ export default{
         min-height: 450px;
         background-position: top center;
         position: relative;
-
-        &::after{
-            content: "CURRENT SERIES";
-            display: inline-block;
-            height: 60px;
-            line-height: 60px;
-            font-size: 1.5rem;
-            font-weight: 700;
-            padding: 0 1.3rem;
-            background-color: $main-blue;
-            position: absolute;
-            bottom: -30px;
-            left: 130px
-        }
     }
 
     .comics{
         padding: 1rem 0;
+        .container{
+            position:relative;
 
-        .comics-top{
-            margin: 1rem 0;
-            .row{
-                display: flex;
-                flex-wrap: wrap;
+            .flag{
+                height: 60px;
+                line-height: 60px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                padding: 0 1.3rem;
+                background-color: $main-blue;
+                position: absolute;
+                top: -65px;
+                left: 0
             }
-        }
-
-        .comics-bottom{
-            text-align: center;
-            margin: .5rem 0;
-                .btn-load{
-                    background-color: $main-blue;
-                    color: white;
-                    border: none;
-                    padding: .5rem 3rem;
-                    cursor: pointer;
+        
+            .comics-top{
+                margin: 1rem 0;
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
                 }
+            }
+        
+            .comics-bottom{
+                text-align: center;
+                margin: .5rem 0;
+                    .btn-load{
+                        background-color: $main-blue;
+                        color: white;
+                        border: none;
+                        padding: .5rem 3rem;
+                         cursor: pointer;
+                        transition: all 300ms linear;
+        
+                        &:hover{
+                            background-color: lighten($main-blue, 10%);
+                        }
+                    }
+            }
         }
     }
 }
