@@ -23,7 +23,7 @@ export default{
     </div>
 </template>
 
-<style lang="scss" scoperd>
+<style lang="scss" scoped>
 .card{
     width: calc(100% / 6 - 1.5rem);
     margin: 1rem .75rem;
